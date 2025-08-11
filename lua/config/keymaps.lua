@@ -2,6 +2,7 @@ vim.keymap.set('n', '<leader>q', ':q<CR>', { desc = 'Quit' })
 vim.keymap.set('n', '<leader>Q', ':quita<CR>', { desc = 'Quit All' })
 
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Open Lazy' })
+vim.keymap.set('n', '<leader>m', ':Mason<CR>', { desc = 'Open Mason' })
 
 -- Fzf
 vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>', { desc = 'Find Files' })

@@ -1,5 +1,7 @@
 vim.keymap.set('n', '<leader>qq', ':q<CR>', { desc = 'Quit' })
+vim.keymap.set('n', '<leader>qQ', ':q!<CR>', { desc = 'Quit Force' })
 vim.keymap.set('n', '<leader>qa', ':quita<CR>', { desc = 'Quit All' })
+vim.keymap.set('n', '<leader>qa', ':quita!<CR>', { desc = 'Quit All Force' })
 vim.keymap.set('n', '<leader>qb', ':bd<CR>', { desc = 'Quit Buffer' })
 
 vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Open Lazy' })

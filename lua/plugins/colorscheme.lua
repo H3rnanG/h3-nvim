@@ -1,5 +1,5 @@
 return {{
-    "rebelot/kanagawa.nvim",
+    'rebelot/kanagawa.nvim',
     priority = 1000,
     config = function()
         -- Default options:
@@ -32,15 +32,15 @@ return {{
             overrides = function(colors) -- add/modify highlights
                 return {}
             end,
-            theme = "wave", -- Load "wave" theme
+            theme = 'wave', -- Load 'wave' theme
             background = { -- map the value of 'background' option to a theme
-                dark = "wave", -- try "dragon" !
-                light = "lotus"
+                dark = 'wave', -- try 'dragon' !
+                light = 'lotus'
             }
         })
     end
 }, {
-    "navarasu/onedark.nvim",
+    'navarasu/onedark.nvim',
     priority = 1000, -- make sure to load this before all the other start plugins
     config = function()
         -- Lua
@@ -53,7 +53,7 @@ return {{
             cmp_itemkind_reverse = false, -- reverse item kind highlights in cmp menu
 
             -- toggle theme style ---
-            toggle_style_key = nil, -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example "<leader>ts"
+            toggle_style_key = nil, -- keybind to toggle theme style. Leave it nil to disable it, or set it to a string, for example '<leader>ts'
             toggle_style_list = {'dark', 'darker', 'cool', 'deep', 'warm', 'warmer', 'light'}, -- List of styles to toggle between
 
             -- Change code style ---

@@ -2,24 +2,14 @@ return {
   "nvimdev/dashboard-nvim",
   lazy = false,
   opts = function()
-    local logo = [[
-██╗  ██╗  ██████╗   ██████╗   ██╗   ██╗  ██╗  ███╗   ███╗
-██║  ██║  ╚════██╗  ██╔══██╗  ██║   ██║  ██║  ████╗ ████║
-███████║   █████╔╝  ██████╔╝  ╚██╗ ██╔╝  ██║  ██╔████╔██║
-██╔══██║   ╚═══██╗  ██╔══██╗   ╚████╔╝   ██║  ██║╚██╔╝██║
-██║  ██║  ██████╔╝  ██║  ██║    ╚██╔╝    ██║  ██║ ╚═╝ ██║
-╚═╝  ╚═╝  ╚═════╝   ╚═╝  ╚═╝     ╚═╝     ╚═╝  ╚═╝     ╚═╝
-]]
-
-    logo = string.rep("\n", 8) .. logo .. "\n\n"
-
     local opts = {
       theme = "doom",
       hide = {
         statusline = true,
       },
       config = {
-        header = vim.split(logo, "\n"),
+        header = {},
+        vertical_center = true,
         center = {
           { action = function() require('fzf-lua').files() end,                       desc = " Find File",       icon = " ", key = "f" },
           { action = "ene | startinsert",                                            desc = " New File",        icon = " ", key = "n" },

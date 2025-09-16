@@ -5,7 +5,7 @@ vim.keymap.set('n', '<leader>qA', ':quita!<CR>', { desc = 'Quit All Force' })
 vim.keymap.set('n', '<leader>qb', ':bd<CR>', { desc = 'Quit Buffer' })
 
 -- Lazy
-vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Open Lazy' })
+vim.keymap.set('n', '<leader>l', ':Lazy<CR>', { desc = 'Lazy' })
 
 -- Fzf moved to plugin via which-key
 
